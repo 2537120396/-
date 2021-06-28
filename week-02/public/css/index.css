@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #31c27c;
+  }
+ @media screen and (min-width : 640px){
+   .songlist-list{
+    grid-template-columns: repeat(2,1fr);
+   }
+   
+ } 
+ @media screen and (min-width :768px ){
+  .songlist-list{
+   grid-template-columns: repeat(3,1fr);
+  }
+  
+} 
+@media screen and (min-width:1240px){
+  .songlist-list{
+   grid-template-columns: repeat(4,1fr);
+  }
+  
+} 
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  header {
+    height: 90px;
+    background: white;
+    display: flex;
+    align-items: center;
+  }
+  .header-inner, main {
+    width: 1200px;
+    margin: auto;
+  }
+  .back{
+    margin: 0;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    width: 100%;
+    background: linear-gradient(to bottom,#f5f5f5,white);
+  }
+  .tag-head{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 40px;
+  }
+  .tag-list {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .tag-all{
+    line-height: 38px;
+    padding:0 23px;
+    color:black;
+    font-size: 14px;
+    border:1px solid #c5c2c2 ;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+  .tag-item {
+    display: inline-block;
+    padding: 0 8px;
+    margin-right: 24px;
+    line-height: 26px;
+    color: #000;
+    text-decoration: none;
+  }
+  .tag-active {
+    color: var(--primary-color);
+  }
+  .tag-item:not(.tag-active):hover {
+    color: var(--primary-color);
+  }
+  .album{
+    width: 100%;
+  }
+  .nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .playlist {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 45px 15px;
+    margin-bottom: 45px;
+    margin-left: 40px;
+  }
+  .cover-wrap {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cover-img {
+    width: 100%;
+    transition: all 0.75s;
+  }
+  .cover-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .cover-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+  .cover-wrap:hover .cover-mask {
+    opacity: 0.2;
+  }
+  .cover-wrap:hover .cover-play {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .cover-wrap:hover .cover-img {
+    transform: scale(1.07);
+  }
+  .album-title:hover {
+    color: var(--primary-color);
+  }
+  .album-author {
+    color: #999;
+    line-height: 1.6;
+  }
+  .album-author:hover {
+    color: var(--primary-color);
+  }
+  .album-time {
+    color: #999;
+  }
+
+  /*新歌首发的css代码*/
+  .songlist-list {
+    display: inline-block;
+    width: 100%;
+  }
+  .songlist-item {
+    display: inline-block;
+    width: 32%;
+  }
+  .slide-list .songlist-list {
+    white-space: normal;
+  }
+  .songlist-item-box {
+    position: relative;
+    height: 86px;
+    overflow: hidden;
+    border-top: 1px solid #f2f2f2;
+    margin: -1px 30px 13px 0;
+    padding-top: 12px;
+    font-size: 14px;
+  }
+  .songlist-cont{
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .songlist-author {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+  }
+  .songlist-time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 86px;
+  }
+  /*mv的css代码*/
+  .mvlide-list {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #f2f2f2;
+    margin: -1px 20px 10px 0;
+    padding-top: 12px;
+    font-size: 14px;
+}
+  .mvlist-list {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+  }
+  .mvlist-item {
+    width: 20%;
+    padding-bottom: 25px;
+    float: left;
+    padding-bottom: 44px;
+    overflow: hidden;
+  }
+  .mvslide-list .mvlist-list {
+    white-space: normal;
+  }
+  .mvlist-item-box {
+    margin-right: 20px;
+    position: relative;
+    height: 113px;
+  }
+  .mv-list-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .mv-list-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .mv-list-singer {
+    height: 24px;
+  }
+  .mv-list-play {
+    line-height: 18px;
+    height: 20px;
+  }
+  /*底部代码*/
+  footer {
+    margin-top: 60px;
+    background: #333;
+    height: 200px;
+  }
