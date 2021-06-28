@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    background: #f5f5f5;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+	color:#ea4c89;
+}
+header {
+    height: 60px;
+    background: white;
+}
+.head{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+}
+.head-img{
+    margin-top: 20px;
+}
+.head-sign{
+   margin-top: 24px;
+   margin-right: 20px;
+   display: flex;
+   flex-direction: row;
+}
+.c-btn {
+  background-color: #ea4c89;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  width: 85px;
+  height: 42px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 42px;
+  margin-top: -10px;
+  margin-left: 5px;
+  display: none;
+}
+/* 隐藏菜单的css*/
+.header-btn{
+    border: 0;
+    background-color: white;
+    padding: 0;
+    margin-left: 20px; 
+    display: inline-block;
+}
+.nav-Subnet{
+    position: relative;
+    height:600px;
+    width: 100%;
+    background-color:white;
+    display: none;
+    z-index: 3;
+ }
+ .nav-ul{
+    margin: 0;
+    padding:40px 20px;
+    background: #fff;
+    line-height: 16px;
+ }
+ .nav-ul>li{
+    margin: 0 5px 30px 0;
+	  padding: 0;
+    list-style: none;
+	  display: block;
+    font-size: 18px;
+ }
+ .nav-ul>li>a:hover{
+  color:#ea4c89;
+  text-decoration:none;
+ }
+ /*主体css*/
+ .container {
+    height: 610px;
+    grid-auto-flow:column;
+    display: grid;
+    background-color: #f9f8fd;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding:0px 20px 0px 20px;
+  }
+.container-img{
+    margin-top: 70px;
+    width: 100%;
+    height: 250px;
+}
+.container-written{
+    margin-top: 50px;
+    text-align:center;
+}
+.Discover{
+    font-size: 24px;
+    text-align:center;
+    font-family: "Adobe Gothic Stad B";
+    font-weight:bold;
+}
+.Discover>p{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.Dribbble{
+    font-size: 14px;
+    text-align:center;
+}
+.container-btn {
+    background-color: #ea4c89;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 85px;
+    height: 42px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 42px;
+    margin-left: 38%;
+}
+.nav{
+    display: none;
+}
+/*底部项目*/
+.list {
+    display: grid;
+    gap: 0 30px;
+    padding: 20px 20px 70px 20px;
+    background-color: white;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+.song-item {
+    display: flex;
+    height: 320px;
+    flex-direction: column;
+    border-bottom: 1px solid #f2f2f2;
+    color: #999;
+  }
+  .song-intro {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    justify-content:space-between;
+  }
+  .song-intro a:hover {
+    color: var(--primary-color);
+  }
+  .song-singer {
+    font-size: 12px;
+    background-color: #cccccc; /* Green */
+    border: none;
+    color: white;
+    width: 45px;
+    height: 20px;
+    margin-top: 3px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+  .song-sep {
+    margin: 0 10px;
+  }
+  .song-name{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 2px;
+  }
+  .cover-wrap {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cover-img {
+    width: 100%;
+  }
+  .mv-list-play {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .list-img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.song-bottom{
+    display: flex;
+    flex-direction:row;
+}
+footer {
+  margin-top: 50px;
+  height: 180px;
+}
+.footer-img{
+  margin-left: 20px;
+}
+.footer-writter{
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 270px;
+}
+
+/*768断点css*/
+@media screen and (min-width: 768px){
+  .container {
+    height: 483px;
+    grid-auto-flow:row;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    padding:0px 30px 0px 30px;
+  }
+.container-img{
+    margin-top: 100px;
+    height: 300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 0;
+    grid-row-end: 1;
+}
+.container-written{
+    margin-top: 100px;
+    grid-column-start: 0;
+    grid-column-end: 2;
+    grid-row-start: 0;
+    grid-row-end: 1;
+}
+.Discover{
+    font-size: 28px;
+    text-align:left;
+}
+.Dribbble{
+    font-size: 16px;
+    text-align:left;
+}
+.container-btn {
+    margin: 0px;
+}
+
+/*底部项目*/
+.list {
+    padding: 20px 30px 120px 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.song-item {
+    height: 280px;
+  }
+} 
+@media screen and (min-width: 920px){
+  .header-btn{
+    display: none;
+  }
+  .head-img{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav{
+    display: block;
+}
+.c-btn {
+  display: block;
+}
+}
+@media screen and (min-width: 1143px){
+  .container {
+    grid-template-columns: 50% 50%;
+    padding:0px 75px 0px 75px;
+  }
+.Discover{
+    font-size: 34px;
+    text-align:left;
+}
+.Dribbble{
+    font-size: 22px;
+    text-align:left;
+}
+.list {
+  padding: 20px 75px 120px 75px;
+  grid-column-gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-img{
+  margin-left: 75px;
+}
+.footer-writter{
+  margin-left: 75px;
+}
+}
+
+@media screen and (min-width: 1366px){
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1920px){
+  .container {
+    grid-template-columns: 50% 50%;
+    padding:0px 180px 0px 180px;
+  }
+  .footer-img{
+    margin-left: 180px;
+  }
+  .footer-writter{
+    margin-left: 180px;
+  }
+}
+.nav {
+	position: relative;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.nav a:hover {
+	color:#ea4c89;
+}
+.nav a {
+
+	color: black;
+	border-radius: 5px;
+}
