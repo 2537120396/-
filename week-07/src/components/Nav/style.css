@@ -1,0 +1,65 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+  }
+  .top {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #d23e34;
+    padding-top: 4rem;
+    box-shadow: 0 0.4rem 2rem 0 rgba(0, 0, 0, 0.2);
+  }
+  .top-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .tabs {
+      padding: 4rem;
+      text-decoration:none;
+  }
+  .tabs > ul {
+      margin: 0;
+      display: grid;
+      border-radius: 2rem;
+      background-color: #cd2523;
+      overflow: hidden;
+      padding: 0;
+      grid-template-columns:repeat(2,50%);
+      text-decoration: none;
+    }
+    .tab-item {
+      flex: 1;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 4rem;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .nav-item {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      font-size: 3rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  .nav-active {
+      background-color: #b9211f;
+  }
+  .article{
+      width: 4rem;
+      height: 4rem;
+  }
+  
