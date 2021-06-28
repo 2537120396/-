@@ -1,0 +1,115 @@
+/* Button组件样式 */
+.default{
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid rgb(199, 199, 199);
+    margin-left: 15px;
+    transition: all 0.1s ease-out
+}
+
+.default:hover{
+    border-color: rgb(64, 169, 255);
+    color: rgb(64, 169, 255);
+    cursor: pointer;
+}
+
+.primary{
+    padding: 5px 15px;
+    background-color: rgb(24, 144, 255);
+    border: 1px solid rgb(24, 144, 255);
+    margin-left: 15px;
+    color: white;
+    transition: all 0.1s ease-out
+}
+
+.primary:hover{
+    background-color: rgb(64, 169, 255);
+    border-color: rgb(64, 169, 255);
+    cursor: pointer;
+}
+
+/* Modal组件样式 */
+
+.mask{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0,0.45);
+      transition: all 0.2s ease-out;
+}
+.hidemask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -130px;
+    width: 500px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    transform: scale(1.0);
+    transition: transform 0.2s ease-out;
+}
+
+.hidemodal{
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -130px;
+    width: 500px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.2s ease-out;
+}
+
+.top,.bot{
+    padding: 15px 20px;
+    font-size: 14px;
+}
+.mid{
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 20px;
+    font-size: 14px;
+}
+.closeBtn,.botBtn{
+    float: right;
+    transition: all 0.1s ease-out
+}
+.closeBtn{
+    color: rgb(49, 49, 49);
+}
+.closeBtn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
