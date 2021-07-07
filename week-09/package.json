@@ -1,0 +1,15 @@
+{
+  "name": "node-shell",
+  "version": "0.1.0",
+  "description": "node shell",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "isbinaryfile": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^15.14.1"
+  }
+}
