@@ -1,0 +1,18 @@
+.back {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper {
+  flex: 1;
+  overflow: auto;
+  flex: 1;
+  overflow: auto;
+  padding: 1.2rem;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}

@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background-color: #F8F8F8;
+  z-index: 9999;
+}
+.nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  flex: 1;
+}
+.nav i {
+  font-size: 2.4rem;
+}
+.nav .item {
+  color: #666;
+}
+.nav .active {
+  color: #FF5000;
+}

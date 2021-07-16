@@ -1,0 +1,36 @@
+.caritem {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+}
+.caritem i {
+  align-self: center;
+}
+.caritem .img {
+  margin: 0 1rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+.caritem .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  align-self: stretch;
+}
+.caritem .text .title {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.caritem .text .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #FF5000;
+}
